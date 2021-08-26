@@ -68,6 +68,6 @@ class PublicUsersAPITests(TestCase):
 
         # Check that the user was never created
         user_exists = (
-            get_user_model().objects.filters(email=payload["email"]).exists()
+            get_user_model().objects.filter(email=payload["email"]).exists()
         )
         self.assertFalse(user_exists)
