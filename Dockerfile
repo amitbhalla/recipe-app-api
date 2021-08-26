@@ -1,5 +1,6 @@
 FROM python:3.9.6-alpine
 
+ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 COPY requirements.txt requirements.txt 
