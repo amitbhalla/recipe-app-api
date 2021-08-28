@@ -16,7 +16,6 @@ before_install:
   - sudo ln -s /usr/lib/i386-linux-gnu/libfreetype.so /usr/lib
   - sudo ln -s /usr/lib/i386-linux-gnu/libjpeg.so /usr/lib
   - sudo ln -s /usr/lib/i386-linux-gnu/libz.so /usr/lib
-  - sudo pip install PIL  --allow-unverified PIL --allow-all-external
   - sudo pip install Pillow
 
 before_script: pip install docker-compose
